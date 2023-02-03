@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  nginx.service:
+          container_name: ${CONT}
+          image: ${IMAGE}
+          ports:
+                  - ${PORT1}:${PORT2}
+          env_file:
+                  - .env
